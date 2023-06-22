@@ -820,29 +820,7 @@ class SoundStorm(nn.Module):
         )
         acc = self.accuracy_metric(logits[loss_mask], orig_seq[loss_mask]).item()
 
-        if not exists(self.token_critic) or only_train_generator:
-            return loss, acc, LossBreakdown(loss, None)
-
-        sampled_ids = gumbel_sample(logits, temperature=default(generator_sample_temperature, random()))
-        generated = torch.where(generation_mask, sampled_ids, orig_seq)
-
-        critic_logits = self.token_critic(generated)
-        critic_labels = (sampled_ids != orig_seq).float()
-
-        critic_loss = F.binary_cross_entropy_with_logits(
-            rearrange(critic_logits, '... 1 -> ...'),
-            critic_labels
-        )
-
-        # determine losses to be returned based on what researcher wants to train
-
-        if only_train_critic:
-            total_loss = critic_loss
-            loss = None
-        else:
-            total_loss = loss + critic_loss * self.critic_loss_weight
-
-        return total_loss, acc, LossBreakdown(loss,  critic_loss)
+        return loss, acc, LossBreakdown(loss, None)
 
 
 if __name__ == '__main__':
