@@ -1,3 +1,6 @@
+# SpearTTS + Soundstorm Reproduced
+Draft version of SpearTTS + SoundStorm Pipeline that will be opensourced by Inworld AI (Will be removed after the Inworld version is released)
+
 # environment
 torch / torchaudio / pytorch_lightning / fairseq (only for preprocess) / encodec / h5py
 
@@ -16,5 +19,11 @@ python train_s2a.py --configuration/xxxx_s2a.yaml
 (resolve path for data and saved checkpoints)
 python inference.py
 
-# listen
+# listen to audio clips
 eval/xxxx_x.wav
+ (first 3 sec is ground truth, followed by the generated audio)
+
+# Credits to
+https://github.com/rishikksh20/SoundStorm-pytorch
+https://github.com/lifeiteng/vall-e
+https://github.com/lucidrains/soundstorm-pytorch/tree/main
