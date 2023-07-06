@@ -136,5 +136,5 @@ def preprocess(data_path: str, output_path: str):
 
 
 if __name__ == '__main__':
-    preprocess('/home/yufei/icefall/valle/examples/ljspeech/download/LJSpeech-1.1/backup', 'data/ljspeech')
+    preprocess('/home/yufei/data/LJSpeech-1.1', 'data/ljspeech')
 
