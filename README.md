@@ -1,5 +1,5 @@
 # SpearTTS + Soundstorm Reproduced
-Draft version of SpearTTS + SoundStorm Pipeline that will be opensourced by Inworld AI (this repo will be removed after the Inworld version is released)
+Draft version of SpearTTS + SoundStorm Pipeline that will be opensourced by Inworld AI (this repo will be removed after the Inworld opensource version is released)
 
 # environment
 torch / torchaudio / pytorch_lightning / fairseq (only for preprocess) / encodec / h5py
