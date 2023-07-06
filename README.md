@@ -28,4 +28,4 @@ https://github.com/rishikksh20/SoundStorm-pytorch
 
 https://github.com/lifeiteng/vall-e
 
-https://github.com/lucidrains/soundstorm-pytorch/tree/main
+https://github.com/lucidrains/soundstorm-pytorch
