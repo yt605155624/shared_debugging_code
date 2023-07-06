@@ -1,4 +1,4 @@
-#  Environment
+# environment
 torch / torchaudio / pytorch_lightning / fairseq (only for preprocess) / encodec / h5py
 
 # preprocess
