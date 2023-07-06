@@ -39,6 +39,6 @@ model:
   conv_module_kernel_size: 5
   hubert_kmean_path: 'data/libritts_train_clean_360/kmeans_model'
 inference:
-    inference_steps: 8
+    inference_steps: [8, 1, 1, 1, 1, 1, 1, 1]
     filter_threshold: 0.7
     temperature: 0.5
