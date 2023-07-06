@@ -5,8 +5,8 @@ Draft version of SpearTTS + SoundStorm Pipeline that will be opensourced by Inwo
 torch / torchaudio / pytorch_lightning / fairseq (only for preprocess) / encodec / h5py
 
 # preprocess
-run preprare_data_xxx.py
-follow hubert_kmeans/hubert_feature_xxx.py --> learn_kmeans_xxx.py --> dump_kmeans_label.py
+run preprare_data_xxx.py to manage audio files and encodec feature,
+then follow the code in hubert_kmeans/hubert_feature_xxx.py --> learn_kmeans_xxx.py --> dump_kmeans_label.py
 (please resolve the path and naming if you have errors preproceesing)
 
 # text to semantic
