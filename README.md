@@ -1,5 +1,5 @@
 # SpearTTS + Soundstorm Reproduced
-Draft version of SpearTTS + SoundStorm Pipeline that will be opensourced by Inworld AI (Will be removed after the Inworld version is released)
+Draft version of SpearTTS + SoundStorm Pipeline that will be opensourced by Inworld AI (this repo will be removed after the Inworld version is released)
 
 # environment
 torch / torchaudio / pytorch_lightning / fairseq (only for preprocess) / encodec / h5py
@@ -24,6 +24,11 @@ eval/xxxx_x.wav
  (first 3 sec is ground truth, followed by the generated audio)
 
 # Credits to
+InWorld AI  https://inworld.ai/
+InWorld Platforms  https://inworld.ai/platform
+InWorld Studio  https://studio.inworld.ai
+InWorld Origin (The interactive game on Steam)  https://inworld.ai/blog/origins-unreal-engine-demo
+
 https://github.com/rishikksh20/SoundStorm-pytorch
 
 https://github.com/lifeiteng/vall-e
